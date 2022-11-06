@@ -26,7 +26,7 @@ The REST APIs to the transaction app are described below.
 
 `POST /wallet/setup`
 
-    curl -i -H 'Accept: application/json' http://localhost:4200/api/v1/wallet/setup
+    curl -i -H 'Accept: application/json' https://ghl-transaction-api.herokuapp.com/api/v1/wallet/setup
 
 ### Body
 
@@ -43,7 +43,7 @@ The REST APIs to the transaction app are described below.
     "data": {
         "name": "Test Wallet",
         "balance": 100,
-        "_id": "6367b6a701cad97b05f4ae16",
+        "_id": "6367c2efcb027fe72375cb00",
         "createdAt": "2022-11-06T13:29:11.507Z",
         "updatedAt": "2022-11-06T13:29:11.548Z",
         "__v": 0
@@ -56,14 +56,14 @@ The REST APIs to the transaction app are described below.
 
 `GET /:id`
 
-    curl -i -H 'Accept: application/json' http://localhost:4200/api/v1/wallet/6367b6a701cad97b05f4ae16
+    curl -i -H 'Accept: application/json' https://ghl-transaction-api.herokuapp.com/api/v1/wallet/6367c2efcb027fe72375cb00
 
 ### Response
 
     {
     "status": true,
     "data": {
-        "_id": "6367b6a701cad97b05f4ae16",
+        "_id": "6367c2efcb027fe72375cb00",
         "name": "Test Wallet",
         "balance": 100,
         "createdAt": "2022-11-06T13:29:11.507Z",
@@ -78,7 +78,7 @@ The REST APIs to the transaction app are described below.
 
 `POST /transactions/transact/:id`
 
-    curl -i -H 'Accept: application/json' http://localhost:4200/api/v1/transactions/transact/6367b6a701cad97b05f4ae16
+    curl -i -H 'Accept: application/json' https://ghl-transaction-api.herokuapp.com/api/v1/transactions/transact/6367c2efcb027fe72375cb00
 
 ### Body
 
@@ -104,7 +104,7 @@ The REST APIs to the transaction app are described below.
 
 `POST /transactions/transact/:id`
 
-    curl -i -H 'Accept: application/json' http://localhost:4200/api/v1/transactions/transact/6367b6a701cad97b05f4ae16
+    curl -i -H 'Accept: application/json' https://ghl-transaction-api.herokuapp.com/api/v1/transactions/transact/6367c2efcb027fe72375cb00
 
 ### Body
 
@@ -130,7 +130,7 @@ The REST APIs to the transaction app are described below.
 
 `GET /transactions`
 
-    curl -i -H 'Accept: application/json' -d 'walletId=6367b6a701cad97b05f4ae16&skip=0&limit=10' http://localhost:4200/api/v1/transactions
+    curl -i -H 'Accept: application/json' -d 'walletId=6367c2efcb027fe72375cb00&skip=0&limit=10' https://ghl-transaction-api.herokuapp.com/api/v1/transactions
 
 ### Response
 
@@ -144,7 +144,7 @@ The REST APIs to the transaction app are described below.
                 "type": "CREDIT",
                 "description": "Wallet Setup",
                 "amount": 100,
-                "walletId": "6367b6a701cad97b05f4ae16",
+                "walletId": "6367c2efcb027fe72375cb00",
                 "balanceBefore": 0,
                 "balanceAfter": 100,
                 "createdAt": "2022-11-06T13:29:11.532Z",
@@ -156,7 +156,7 @@ The REST APIs to the transaction app are described below.
                 "type": "CREDIT",
                 "description": "Test credit",
                 "amount": 20,
-                "walletId": "6367b6a701cad97b05f4ae16",
+                "walletId": "6367c2efcb027fe72375cb00",
                 "balanceBefore": 100,
                 "balanceAfter": 120,
                 "createdAt": "2022-11-06T13:39:44.166Z",
@@ -168,7 +168,7 @@ The REST APIs to the transaction app are described below.
                 "type": "DEBIT",
                 "description": "Test debit",
                 "amount": -20,
-                "walletId": "6367b6a701cad97b05f4ae16",
+                "walletId": "6367c2efcb027fe72375cb00",
                 "balanceBefore": 120,
                 "balanceAfter": 100,
                 "createdAt": "2022-11-06T13:41:27.161Z",
