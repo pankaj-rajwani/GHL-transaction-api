@@ -1,5 +1,5 @@
 # GHL-transaction-api
-REST API backend built over Node.js + Express.js + Mongoose for Go High Level's wallet transaction assignment
+REST API backend built over Node.js + Express.js + Mongoose
 
 ### Package manager
 This project is using [Yarn](https://yarnpkg.com/en/docs/install) as package manager, if you do not have this installed on your machine please start by looking at the [Yarn docuentation and tutorials](https://classic.yarnpkg.com/en/docs). After installing the package manager the following commands will be availible for you:
