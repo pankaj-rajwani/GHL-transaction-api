@@ -1,7 +1,7 @@
 {
-  "name": "gohighlevel-assignment",
+  "name": "GHL-Transaction-API",
   "version": "1.0.0",
-  "description": "Full Stack Dev Hiring Challenge 2",
+  "description": "REST api built with Node.js + Express.js",
   "main": "src/server/index.js",
   "scripts": {
     "start:dev": "nodemon ./src/server/index.js",
